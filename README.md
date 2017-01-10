@@ -1,0 +1,2 @@
+# .bashrc-examples
+.bashrc examples
