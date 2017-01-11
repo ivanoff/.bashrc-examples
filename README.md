@@ -1,25 +1,18 @@
 # .bashrc examples
 
 
-
 ## ll as cute ls [bash]
-
-### Code
 
 ```bash
 alias ll="ls -lhA"
 ```
 
-### usage
+**Usage**
 
-`ll`
-
+  `ll`
 
 
 ## deploy node.js project [node.js] [pm2]
-
-
-### Code
 
 ```bash
 dep () {
@@ -40,17 +33,17 @@ dep () {
 };
 ```
 
-### usage
+**Usage**
 
-Deploy without changelog information
+  Deploy without changelog information
 
-`dep`
+  `dep`
 
-Deploy with changelog information
+  Deploy with changelog information
 
-`dep CHANGELOG INFORMATION`
+  `dep CHANGELOG INFORMATION`
 
-### Some conditions
+**Some conditions**
 
 - project hasn't to be in master branch
 - changelog information adds to 8'th line of CHANGELOG.md file
@@ -58,10 +51,7 @@ Deploy with changelog information
 - this is example to deploy current branch to test environment (read more [how to deploy with pm2](https://keymetrics.io/2014/06/25/ecosystem-json-deploy-and-iterate-faster/))
 
 
-
 ## create a directory and cd into it [bash]
-
-### Code
 
 ```bash
 mcd () {
@@ -70,71 +60,56 @@ mcd () {
 }
 ```
 
-### usage
+**Usage**
 
 `mcd new_dir`
 
 
-
 ## useful ps [bash]
-
-### Code
 
 ```bash
 alias ps="ps auxf"
 ```
 
-### usage
+**Usage**
 
-`ps`
-
+  `ps`
 
 
 ## process search [bash]
-
-### Code
 
 ```bash
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 ```
 
-### usage
+**Usage**
 
-`psg chrome`
-
+  `psg chrome`
 
 
 ## human-readable df with filesystem type and total [bash]
-
-### Code
 
 ```bash
 alias df="df -Tha --total"
 ```
 
-### usage
+**Usage**
 
-`df`
-
+  `df`
 
 
 ## sorted du [bash]
-
-### Code
 
 ```bash
 alias du="du -ach | sort -h"
 ```
 
-### usage
+**Usage**
 
-`du`
-
+  `du`
 
 
 ## extract any archive [bash]
-
-### Code
 
 ```bash
 function e {
@@ -170,27 +145,23 @@ fi
 }
 ```
 
-### usage
+**Usage**
 
-`e <filename>`
-
+  `e <filename>`
 
 
 ## perl checks every .pl, .pm and .t files recursively [perl]
-
-### Code
 
 ```bash
 alias perlc="find -type f -name '*.t' -exec perl -c {} \; -or -name '*.p[lm]' -exec perl -c {} \;"
 ```
 
-### usage
+**Usage**
 
-`perlc`
+  `perlc`
 
 
-
-## In common
+## All in common
 
 ```bash
 alias ll="ls -lhA"
@@ -257,7 +228,6 @@ fi
 ```
 
 
-
-## Created by
+## Created and copy-pasted by
 
 Dimitry, 2@ivanoff.org.ua # curl -A cv ivanoff.org.ua
